@@ -160,6 +160,12 @@ git log
 
 Clonar un repositorio existente:
 
+
+Por ejemplo, si desea clonar el repositorio de este curso puede hacerlo de la siguiente manera:
 ```bash
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/danielcruca/plataformas-abiertas.git
 ```
+Aquí el repo ya existe y entonces solo se hace esto.
+
+# Flujo
+![alt text](imagenes/flujo.png)
