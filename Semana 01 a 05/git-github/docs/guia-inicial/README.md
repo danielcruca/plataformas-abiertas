@@ -116,6 +116,7 @@ git commit -m "Primer commit"
 ## 🔗 Paso 8: Conectar el Repositorio Local con GitHub
 
 1. Copia la URL del repositorio recién creado.
+![alt text](imagenes/image-9.png)
 2. En tu terminal, ejecuta (reemplaza con tu URL):
 
 ```bash
@@ -123,8 +124,6 @@ git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.
 ```
 
 Esto enlaza tu repositorio local con el repositorio remoto en GitHub.
-
-![alt text](imagenes/image-9.png)
 
 ---
 
