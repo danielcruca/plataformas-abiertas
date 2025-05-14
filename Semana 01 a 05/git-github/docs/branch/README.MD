@@ -70,10 +70,10 @@ Esto sube tu nueva rama al repositorio en GitHub.
 
 1. Ve a tu repositorio en [https://github.com](https://github.com)
 2. GitHub te mostrará un botón que dice **"Compare & pull request"**. Haz clic.
-![alt text](image.png)
+![alt text](./imagenes/image.png)
 3. Escribe un título y una descripción (ejemplo: "Agregué nueva línea al README").
 4. Haz clic en **"Create pull request"**.
-![alt text](image-1.png)
+![alt text](./imagenes/image-1.png)
 5. Con esto has creado un Pull Request. 🎉
 
 ---
@@ -81,11 +81,11 @@ Esto sube tu nueva rama al repositorio en GitHub.
 ## ✅ Paso 15: Fusionar (Merge) el Pull Request
 
 Un administrador del repositorio puede revisar el PR y, si está bien, hacer clic en **"Merge pull request"** para integrarlo en la rama principal.
-![alt text](image-2.png)
+![alt text](./imagenes/image-2.png)
 
-![alt text](image-3.png)
+![alt text](./imagenes/image-3.png)
 
- ![alt text](image-5.png)
+ ![alt text](./imagenes/image-5.png)
 ---
 
 ## 🧹 Paso 16: (Opcional) Eliminar la Rama
