@@ -28,9 +28,9 @@ git config --global user.email "tucorreo@example.com"
 2. Abre la carpeta con Visual Studio Code.
 3. Una vez abierta, accede a la terminal integrada.
 
-![alt text](image.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](imagenes/image.png)
+![alt text](imagenes/image-2.png)
+![alt text](imagenes/image-3.png)
 
 ---
 
@@ -44,7 +44,7 @@ git init
 
 Deberías ver algo como esto:
 
-![alt text](image-4.png)
+![alt text](imagenes/image-4.png)
 
 ---
 
@@ -64,7 +64,7 @@ Deberías ver algo como esto:
    👉 ![esta](https://upload.wikimedia.org/wikipedia/commons/3/3b/Windows_9X_BSOD.png)
 
 Hasta este momento, el proyecto se debe ver así:  
-![alt text](image-5.png)
+![alt text](imagenes/image-5.png)
 
 ---
 
@@ -84,7 +84,7 @@ git status
 
 Deberías ver algo como esto:
 
-![alt text](image-6.png)
+![alt text](imagenes/image-6.png)
 
 ---
 
@@ -96,7 +96,7 @@ Un *commit* guarda los cambios en tu repositorio local.
 git commit -m "Primer commit"
 ```
 
-![alt text](image-10.png)
+![alt text](imagenes/image-10.png)
 
 ---
 
@@ -108,8 +108,8 @@ git commit -m "Primer commit"
 4. **Desmarca** la opción *Initialize this repository with a README*
 5. Haz clic en **Create repository**
 
-![alt text](image-7.png)
-![alt text](image-8.png)
+![alt text](imagenes/image-7.png)
+![alt text](imagenes/image-8.png)
 
 ---
 
@@ -124,7 +124,7 @@ git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.
 
 Esto enlaza tu repositorio local con el repositorio remoto en GitHub.
 
-![alt text](image-9.png)
+![alt text](imagenes/image-9.png)
 
 ---
 
