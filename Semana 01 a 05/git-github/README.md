@@ -1,124 +1,143 @@
-# 🚀 Guía Completa: Crear un repositorio Git y subirlo a GitHub.
+# 🚀 Guía Completa: Crear un Repositorio Git y Subirlo a GitHub
 
-## ✅ Requisitos previos
+## ✅ Requisitos Previos
 
 1. Tener **Git instalado**  
-   👉 https://git-scm.com/downloads
+   👉 [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 2. Tener una **cuenta de GitHub**  
-   👉 https://github.com/
+   👉 [https://github.com](https://github.com)
 
+---
 
-## ✅ Paso 1: Configurar Git (solo la primera vez)
+## 🛠️ Paso 1: Configurar Git (solo la primera vez)
 
-### Abrir una terminal y ejecutar:
+Abre una terminal y ejecuta los siguientes comandos:
+
 ```bash
 git config --global user.name "Tu Nombre"
 git config --global user.email "tucorreo@example.com"
 ```
 
-## 📁 Paso 2: Crear un proyecto nuevo
+---
 
-1. Para este paso, crearemos una carpeta con un nombre cualquiera.
-2. Puede crearla en cualquier lugar su PC.
-3. Por ejemplo: C:\Users\SU-USUARIO\Documents\Proyectos
-4. ![alt text](image.png)
-5. Abra la carpeta con CODE.
-6. ![alt text](image-2.png)
-7. Una vez dentro, abra una terminal.
-8. ![alt text](image-3.png)
+## 📁 Paso 2: Crear un Proyecto Nuevo
 
-## 🧠 Paso 3: Inicializar Git
+1. Crea una carpeta con el nombre de tu proyecto, por ejemplo:  
+   `C:\Users\TU-USUARIO\Documents\Proyectos`
+2. Abre la carpeta con Visual Studio Code.
+3. Una vez abierta, accede a la terminal integrada.
 
-Para inicializar el repositorio git(o sea el local),ejecute en la terminal lo siguiente:
+---
+
+## 🔧 Paso 3: Inicializar el Repositorio Git
+
+Inicializa el repositorio local con:
 
 ```bash
 git init
 ```
-Debera de ver algo asi:
 
-![alt text](image-4.png)
+Deberías ver algo como esto:
 
-## ✍️ Paso 4: Crear algún archivo (ejemplo: README)
+```
+Initialized empty Git repository in ...
+```
 
-1. Crear un archivo llamado `README.md` con el siguiente contenido:
+---
+
+## 📝 Paso 4: Crear un Archivo README y Agregar Imágenes
+
+1. Crea un archivo llamado `README.md` y escribe lo siguiente:
 
 ```markdown
 # Tareas Plataformas Abiertas
 
-*Nombre de estudiante:* SU NOMBRE Y APELLIDOS.
-
+*Nombre de estudiante:* TU NOMBRE Y APELLIDOS.
 ```
-2. Crear un folder llamado imagenes.
-3. Bajar una imagen cualquiera y agregarla en imagenes. O puede descargar ![esta](https://upload.wikimedia.org/wikipedia/commons/3/3b/Windows_9X_BSOD.png). 
-4. Hasta este momento, el proyecto se debe de ver asi.
-![alt text](image-5.png)
 
-## ➕ Paso 5: Agregar archivos al staging
+2. Crea una carpeta llamada `imagenes`.
+3. Descarga una imagen cualquiera y colócala dentro de la carpeta `imagenes`.  
+   Por ejemplo:  
+   👉 ![Descargar esta imagen](https://upload.wikimedia.org/wikipedia/commons/3/3b/Windows_9X_BSOD.png)
 
-*Nota:*El staging o área de preparación antes de hacer el commit.
+---
+
+## ➕ Paso 5: Agregar Archivos al Staging
+
+El área de *staging* es donde preparas los archivos antes de confirmarlos (commit).
 
 ```bash
 git add .
 ```
-Puede ejecutar el siguiente comando para verificar los archivos:
+
+Para verificar los archivos agregados, ejecuta:
 
 ```bash
 git status
 ```
-Se deberá de ver algo asi:
-![alt text](image-6.png)
 
-## 💾 Paso 6: Hacer un commit
+---
 
-Commit es la acción de guardar los cambios en el repositorio local.
+## 💾 Paso 6: Hacer un Commit
+
+Un *commit* guarda los cambios en tu repositorio local.
 
 ```bash
 git commit -m "Primer commit"
 ```
-![alt text](image-10.png)
-Hasta este momento tenemos todo listo en el repositorio local
 
-## 🌐 Paso 7: Crear el repositorio en GitHub (Solo cuando se crea un repo nuevo)
+---
 
-1. Ir a [https://github.com](https://github.com)
-2. Hacer clic en **New**
-3. Ponerle un nombre (ej. `tareas-plataformas-abiertas`)
-4. **No** seleccionar la opción de "Initialize with README"
-5. Click en **Create repository**
+## 🌐 Paso 7: Crear un Repositorio en GitHub
 
-![alt text](image-7.png)
-![alt text](image-8.png)
+1. Ve a [https://github.com](https://github.com)
+2. Haz clic en **New**
+3. Escribe el nombre del repositorio (ej. `tareas-plataformas-abiertas`)
+4. **Desmarca** la opción *Initialize this repository with a README*
+5. Haz clic en **Create repository**
 
-## 🔗 Paso 8: Conectar el repositorio local con el remoto (Solo se hace una vez)
+---
 
-1. Luego de crear el repositorio en GitHub, copia la URL del repositorio.
-![alt text](image-9.png)
-2.En la terminal ejecuta lo siguiente remplazando la URL con la URL del repositorio que copiaste.
+## 🔗 Paso 8: Conectar el Repositorio Local con GitHub
+
+1. Copia la URL del repositorio recién creado.
+2. En tu terminal, ejecuta (reemplaza con tu URL):
 
 ```bash
-git remote add origin https://github.com/SU-USUARIO/tareas-plataformas-abiertas.git
+git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.git
 ```
-*Nota:* Aca estamos creando un enlace entre el local y el remoto. Y diciendo que el origin es el remoto.
 
-## 🚀 Paso 9: Subir el proyecto a GitHub(Ejecutar cada vez que se envian cambios al repo)
+Esto enlaza tu repositorio local con el repositorio remoto en GitHub.
+
+---
+
+## 🚀 Paso 9: Subir tu Proyecto a GitHub
+
+Para subir tu proyecto por primera vez:
+
 ```bash
 git push -u origin master
 ```
 
-> ⚠️ Si tu rama se llama `main` en lugar de `main`, usá:
+> ⚠️ Si tu rama principal se llama `main`, usa en su lugar:
+>
 > ```bash
 > git push -u origin main
 > ```
 
+---
+
 ## 🛠️ Comandos Útiles
 
 Ver estado de los archivos:
+
 ```bash
 git status
 ```
 
 Ver historial de commits:
+
 ```bash
 git log
 ```
