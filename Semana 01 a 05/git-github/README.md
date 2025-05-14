@@ -28,6 +28,10 @@ git config --global user.email "tucorreo@example.com"
 2. Abre la carpeta con Visual Studio Code.
 3. Una vez abierta, accede a la terminal integrada.
 
+![alt text](image.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
 ---
 
 ## 🔧 Paso 3: Inicializar el Repositorio Git
@@ -40,9 +44,7 @@ git init
 
 Deberías ver algo como esto:
 
-```
-Initialized empty Git repository in ...
-```
+![alt text](image-4.png)
 
 ---
 
@@ -58,8 +60,11 @@ Initialized empty Git repository in ...
 
 2. Crea una carpeta llamada `imagenes`.
 3. Descarga una imagen cualquiera y colócala dentro de la carpeta `imagenes`.  
-   Por ejemplo:  
-   👉 ![Descargar esta imagen](https://upload.wikimedia.org/wikipedia/commons/3/3b/Windows_9X_BSOD.png)
+   También puedes usar esta:  
+   👉 ![esta](https://upload.wikimedia.org/wikipedia/commons/3/3b/Windows_9X_BSOD.png)
+
+Hasta este momento, el proyecto se debe ver así:  
+![alt text](image-5.png)
 
 ---
 
@@ -77,6 +82,10 @@ Para verificar los archivos agregados, ejecuta:
 git status
 ```
 
+Deberías ver algo como esto:
+
+![alt text](image-6.png)
+
 ---
 
 ## 💾 Paso 6: Hacer un Commit
@@ -87,6 +96,8 @@ Un *commit* guarda los cambios en tu repositorio local.
 git commit -m "Primer commit"
 ```
 
+![alt text](image-10.png)
+
 ---
 
 ## 🌐 Paso 7: Crear un Repositorio en GitHub
@@ -96,6 +107,9 @@ git commit -m "Primer commit"
 3. Escribe el nombre del repositorio (ej. `tareas-plataformas-abiertas`)
 4. **Desmarca** la opción *Initialize this repository with a README*
 5. Haz clic en **Create repository**
+
+![alt text](image-7.png)
+![alt text](image-8.png)
 
 ---
 
@@ -109,6 +123,8 @@ git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.
 ```
 
 Esto enlaza tu repositorio local con el repositorio remoto en GitHub.
+
+![alt text](image-9.png)
 
 ---
 
