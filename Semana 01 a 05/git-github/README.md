@@ -167,5 +167,18 @@ git clone https://github.com/danielcruca/plataformas-abiertas.git
 ```
 Aquí el repo ya existe y entonces solo se hace esto.
 
+# Agregar colaboradores
+
+Para trabajar colaborativamente con otros desarrolladores, puedes agregarlos como colaboradores de su repositorio.
+
+1. Vaya a la configuracion de su repositorio.
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+*Nota*: 
+1. Solo los administradores del repositorio pueden agregar colaboradores.
+2. El usuario del profesor es: **danielcruca**.
+
 # Flujo
 ![alt text](imagenes/flujo.png)
