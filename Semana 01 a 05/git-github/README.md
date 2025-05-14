@@ -6,13 +6,13 @@ Aquí encontrarás la documentación relacionada con **Git** y **GitHub**.
 
 ## 📘 Guía inicial
 
-➡️ [guia-inicial/README.md](guia-inicial/README.md)
+➡️ [guia-inicial/README.md](./docs/guia-inicial/README.md)
 
 ---
 
 ## 🌿 Guía para uso de branches
 
-➡️ [branch/README.md](branch/README.md)
+➡️ [branch/README.md](./docs/guia-inicial/README.md)
 
 ---
 
