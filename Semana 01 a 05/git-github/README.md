@@ -10,8 +10,10 @@ Aquí encontrarás la documentación relacionada con **Git** y **GitHub**.
 
 ---
 
-## Guía para uso de branches.
+## 🌿 Guía para uso de branches
+
 ➡️ [branch/README.md](branch/README.md)
+
 ---
 
 ## 🌐 Recursos oficiales
