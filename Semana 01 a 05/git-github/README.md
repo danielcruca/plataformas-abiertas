@@ -14,6 +14,10 @@ Aquí encontrarás la documentación relacionada con **Git** y **GitHub**.
 
 ➡️ [branch/README.md](./docs/guia-inicial/README.md)
 
+##  🌿 Guía para uso de github-desktop
+
+➡️ [github-desktop/README.md](./docs/github-desktop/README.md)
+
 ## Opcional:
 Github desktop app: [https://desktop.github.com/download/](https://desktop.github.com/download/)
 
