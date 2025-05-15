@@ -72,9 +72,9 @@ Con esto su proyecto está actualizado en la nube(github). 🚀
 3. Hacé clic en **"Create Branch"**.
 4. Hacé tus cambios, commit y push como antes.
 
-![alt text](imagenes/-3.png)
+![alt text](imagenes/image-3.png)
 
-![alt text](imagenes/-4.png)
+![alt text](imagenes/image-4.png)
 
 ---
 
