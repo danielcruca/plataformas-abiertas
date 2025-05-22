@@ -10,6 +10,9 @@
 
 ---
 
+# Parte 1: Uso de git(local) 
+
+---
 ## 🛠️ Paso 1: Configurar Git (solo la primera vez)
 
 Abre una terminal y ejecuta los siguientes comandos:
@@ -42,7 +45,7 @@ Inicializa el repositorio local con:
 git init
 ```
 
-Deberías ver algo como esto:
+Vera algo como esto:
 
 ![alt text](imagenes/image-4.png)
 
@@ -60,7 +63,7 @@ Deberías ver algo como esto:
 
 2. Crea una carpeta llamada `imagenes`.
 3. Descarga una imagen cualquiera y colócala dentro de la carpeta `imagenes`.  
-   También puedes usar esta:  
+   Puede usar esta:  
    👉 ![esta](https://upload.wikimedia.org/wikipedia/commons/3/3b/Windows_9X_BSOD.png)
 
 Hasta este momento, el proyecto se debe ver así:  
@@ -82,7 +85,7 @@ Para verificar los archivos agregados, ejecuta:
 git status
 ```
 
-Deberías ver algo como esto:
+Veras algo como esto:
 
 ![alt text](imagenes/image-6.png)
 
@@ -92,6 +95,8 @@ Deberías ver algo como esto:
 
 Un *commit* guarda los cambios en tu repositorio local.
 
+El parámetro *-m* es para agregar un *mensaje descriptivo*, puede agregar cualquier cosa mientras sea descriptiva.
+
 ```bash
 git commit -m "Primer commit"
 ```
@@ -99,7 +104,8 @@ git commit -m "Primer commit"
 ![alt text](imagenes/image-10.png)
 
 ---
-
+# Parte 1: Uso de github(en la nube) e integración con git(local). 
+---
 ## 🌐 Paso 7: Crear un Repositorio en GitHub
 
 1. Ve a [https://github.com](https://github.com)
@@ -117,7 +123,7 @@ git commit -m "Primer commit"
 
 1. Copia la URL del repositorio recién creado.
 ![alt text](imagenes/image-9.png)
-2. En tu terminal, ejecuta (reemplaza con tu URL):
+2. En la terminal, ejecuta (reemplaza con su URL):
 
 ```bash
 git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.git
@@ -125,6 +131,7 @@ git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.
 
 Esto enlaza tu repositorio local con el repositorio remoto en GitHub.
 
+Nota que la palabra origin es el "nombre" que le diste a tu repositorio en GitHub.
 ---
 
 ## 🚀 Paso 9: Subir tu Proyecto a GitHub
@@ -157,7 +164,7 @@ Ver historial de commits:
 git log
 ```
 
-Clonar un repositorio existente:
+## Clonar un repositorio existente:
 
 
 Por ejemplo, si desea clonar el repositorio de este curso puede hacerlo de la siguiente manera:
