@@ -67,7 +67,7 @@ Crear el usuario de la siguiente forma.
 
 4. Haz clic en **Confirm**.
 
-![alt text](/imagenes/net-work.png)
+![alt text](./imagenes/net-work.png)
 ---
 
 ## 4️⃣ Obtener la Cadena de Conexión
@@ -84,7 +84,7 @@ Crear el usuario de la siguiente forma.
 
 4. Reemplaza `<username>` y `<password>` por los datos que creaste.
 
-![alt text](/imagenes/user-pass.png)
+![alt text](./imagenes/user-pass.png)
 ---
 
 ## 5️⃣ Conectarse desde MongoDB Compass
