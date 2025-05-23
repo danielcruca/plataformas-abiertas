@@ -27,7 +27,7 @@ git config --global user.email "tucorreo@example.com"
 ## 📁 Paso 2: Crear un Proyecto Nuevo
 
 1. Crea una carpeta con el nombre de tu proyecto, por ejemplo:  
-   `C:\Users\TU-USUARIO\Documents\Proyectos`
+   `C:\Users\TU-USUARIO\Documents\Proyectos\MI-NOMBRE-DE-PROYECTO`
 2. Abre la carpeta con Visual Studio Code.
 3. Una vez abierta, accede a la terminal integrada.
 
@@ -89,6 +89,7 @@ Veras algo como esto:
 
 ![alt text](imagenes/image-6.png)
 
+Esto significa que los archivos fueron agregados a la zona de *staging* y listos para ser confirmados.
 ---
 
 ## 💾 Paso 6: Hacer un Commit
@@ -100,18 +101,31 @@ El parámetro *-m* es para agregar un *mensaje descriptivo*, puede agregar cualq
 ```bash
 git commit -m "Primer commit"
 ```
+Acá vera otro ejemplo de comentarios para los commit, por si gusta probar algo mas significativo:
+
+```bash
+git commit -m "Agregado soporte a base de datos."
+# Otro ejemplo:
+git commit -m "Arregla timeout en produccion."
+
+```
+
+Luego de ejecutar esto deberias ver algo como esto:
+
+![alt text](imagenes/image-status.png)
+
 
 ![alt text](imagenes/image-10.png)
 
 ---
-# Parte 1: Uso de github(en la nube) e integración con git(local). 
+# Parte 2: Uso de github(en la nube) e integración con git(local). 
 ---
 ## 🌐 Paso 7: Crear un Repositorio en GitHub
 
 1. Ve a [https://github.com](https://github.com)
-2. Haz clic en **New**
+2. Haz clic en **Create repository**
 3. Escribe el nombre del repositorio (ej. `tareas-plataformas-abiertas`)
-4. **Desmarca** la opción *Initialize this repository with a README*
+4. **Desmarca**(si está marcada) la opción *Initialize this repository with a README*
 5. Haz clic en **Create repository**
 
 ![alt text](imagenes/image-7.png)
@@ -136,7 +150,7 @@ Nota que la palabra origin es el "nombre" que le diste a tu repositorio en GitHu
 
 ## 🚀 Paso 9: Subir tu Proyecto a GitHub
 
-Para subir tu proyecto por primera vez:
+Para subir tu proyecto por primera vez a la nube, ejecuta:
 
 ```bash
 git push -u origin master
@@ -147,8 +161,36 @@ git push -u origin master
 > ```bash
 > git push -u origin main
 > ```
+Despues de esto, posiblemente te salga una pantalla como para autenticarte.
+
+![alt text](imagenes/image-auth.png)
+
+y luego:
+
+![alt text](imagenes/image-succeded.png)
+
+La consola debera mostrar algo como esto:
+
+![alt text](imagenes/image-master-ready.png)
 
 ---
+
+🚀 ¡Listo! Tanto el repositorio local como el remoto(la nube) estan sincronizados.
+
+Si desea agregar mas archivos, siga  los pasos: 4, 5, 6  y luego el 9, que seria algo asi:
+
+```bash
+# 1. Agregar los cambios al área de staging(todos los archivos).
+git add .
+# O si solo sea agregar un archivo en specifico y no todos seria:
+git add arhivo-nuevo.py
+
+# 2. Confirmar (commit) los cambios con un mensaje descriptivo
+git commit -m "Agrega nueva función de búsqueda en app.py"
+
+# 3. Enviar (push) los cambios al repositorio remoto, rama principal (main o master)
+git push origin main
+```
 
 ## 🛠️ Comandos Útiles
 
