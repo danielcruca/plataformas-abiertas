@@ -185,7 +185,7 @@ Si desea agregar mas archivos, siga  los pasos: 4, 5, 6  y luego el 9, que seria
 ```bash
 # 1. Agregar los cambios al área de staging(todos los archivos).
 git add .
-# O si solo sea agregar un archivo en specifico y no todos seria:
+# O si solo desea agregar un archivo en specifico y no todos seria:
 git add arhivo-nuevo.py
 
 # 2. Confirmar (commit) los cambios con un mensaje descriptivo
@@ -194,6 +194,23 @@ git commit -m "Agrega nueva función de búsqueda en app.py"
 # 3. Enviar (push) los cambios al repositorio remoto, rama principal (main o master)
 git push origin main
 ```
+
+# Resumen
+
+Basicamente esto son los comandos a ejecutar:
+
+```bash
+
+echo "# tareas-plataformas" >> README.md
+git init # Iniciar repo en local
+git add . #Agregar todos los cambios a staging
+git commit -m "first commit" # Hacer commit y confirmar los cambios.
+git branch -M main # Renombrar la rama principal a main.
+git remote add origin https://github.com/su-usuario/su-proyecto.git # Agregar el repositorio de la nube
+git push -u origin main # Subir los cambios a la nube crear en ella una ramma main.
+
+```
+
 
 ## 🛠️ Comandos Útiles
 
