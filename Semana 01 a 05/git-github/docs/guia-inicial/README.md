@@ -197,16 +197,16 @@ git push origin main
 
 # Resumen
 
-Basicamente esto son los comandos a ejecutar:
+Basicamente esto son los comandos a ejecutar siguiendo la guia:
 
 ```bash
 
-echo "# tareas-plataformas" >> README.md
+# Crear un archivo en el repositorio local
 git init # Iniciar repo en local
 git add . #Agregar todos los cambios a staging
 git commit -m "first commit" # Hacer commit y confirmar los cambios.
-git branch -M main # Renombrar la rama principal a main.
-git remote add origin https://github.com/su-usuario/su-proyecto.git # Agregar el repositorio de la nube
+git branch -M main # Renombrar la rama principal a main. " Solo se debe hacer una vez"
+git remote add origin https://github.com/su-usuario/su-proyecto.git # Agregar el repositorio de la nube. Solo se debe hacer una vez.
 git push -u origin main # Subir los cambios a la nube crear en ella una ramma main.
 
 ```
