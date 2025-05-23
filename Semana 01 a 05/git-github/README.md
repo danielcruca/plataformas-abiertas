@@ -12,7 +12,7 @@ Aquí encontrarás la documentación relacionada con **Git** y **GitHub**.
 
 ## 🌿 Guía para uso de branches
 
-➡️ [branch/README.md](./docs/guia-inicial/README.md)
+➡️ [branch/README.md](./docs/branch/README.md)
 
 ##  🌿 Guía para uso de github-desktop
 
