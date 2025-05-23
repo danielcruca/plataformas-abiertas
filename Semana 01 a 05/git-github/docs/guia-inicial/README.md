@@ -140,6 +140,9 @@ Luego de ejecutar esto deberias ver algo como esto:
 2. En la terminal, ejecuta (reemplaza con su URL):
 
 ```bash
+   git branch -M main
+```
+```bash
 git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.git
 ```
 
@@ -153,13 +156,13 @@ Nota que la palabra origin es el "nombre" que le diste a tu repositorio en GitHu
 Para subir tu proyecto por primera vez a la nube, ejecuta:
 
 ```bash
-git push -u origin master
+git push -u origin main
 ```
 
-> ⚠️ Si tu rama principal se llama `main`, usa en su lugar:
+> ⚠️ Si tu rama principal se llama `master`, usa en su lugar solo si esto se cumple:
 >
 > ```bash
-> git push -u origin main
+> git push -u origin master
 > ```
 Despues de esto, posiblemente te salga una pantalla como para autenticarte.
 
