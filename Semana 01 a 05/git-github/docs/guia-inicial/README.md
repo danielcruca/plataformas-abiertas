@@ -137,11 +137,11 @@ Luego de ejecutar esto deberias ver algo como esto:
 
 1. Copia la URL del repositorio recién creado.
 ![alt text](imagenes/image-9.png)
-2. En la terminal, ejecuta (reemplaza con su URL):
-
+2. En la terminal, ejecute el siguiente comando:
 ```bash
    git branch -M main
 ```
+3. En la terminal, ejecute el siguiente comando usando la URL copiada:
 ```bash
 git remote add origin https://github.com/TU-USUARIO/tareas-plataformas-abiertas.git
 ```
