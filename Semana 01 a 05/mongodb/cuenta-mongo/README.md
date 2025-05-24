@@ -59,6 +59,8 @@ Crear el usuario de la siguiente forma.
 
 ## 3️⃣ Agregar una IP a la Lista Blanca
 
+Esto es necesario para conectarse desde cualquier lugar. si no lo haces, solo puede conectarse desde tu propia IP.
+
 1. Ve a **Network Access** en el menú lateral.
 
 2. Haz clic en **+ ADD IP ADDRESS**.
