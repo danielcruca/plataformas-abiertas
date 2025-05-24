@@ -96,16 +96,18 @@ Crear el usuario de la siguiente forma.
 3. Haz clic en **Connect**.
 
 4. ¡Listo! Ahora puedes ver tus bases de datos y comenzar a trabajar.
+![alt text](./imagenes/agregar-conexion.png)
 
+![alt text](./imagenes/string-de-conexion.png)
 ---
 
 ## 📌 Recomendaciones Finales
 
-- Puedes crear nuevas bases de datos y colecciones desde Compass fácilmente.
+- Puede crear nuevas bases de datos y colecciones desde Compass fácilmente o desde web.
 - Recuerda **NO compartir tu contraseña** ni cadena de conexión públicamente.
 - Usa esta conexión solo en ambientes de desarrollo.
 
 ---
 
-¿Dudas? Pregunta a tu profesor o revisa la documentación oficial:  
+## Documentación oficial:  
 👉 [https://www.mongodb.com/docs/atlas/](https://www.mongodb.com/docs/atlas/)
