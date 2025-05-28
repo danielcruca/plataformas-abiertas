@@ -17,3 +17,6 @@ Estos archivos usan un lenguaje de etiquetado para dar formato al texto.
 Para más detalle, visita [acá](https://www.markdownguide.org/basic-syntax/). 🖋️  
 
  
+# Arquitectura del proyecto
+
+![alt text](imagenes/arquitectura.png)
