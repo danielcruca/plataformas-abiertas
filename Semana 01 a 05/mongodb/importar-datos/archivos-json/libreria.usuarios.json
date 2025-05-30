@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd9"
+  },
+  "username": "juanperez",
+  "email": "juan@example.com",
+  "hashed_password": "supersegura123",
+  "rol": "cliente",
+  "fecha_creacion": {
+    "$date": "2025-05-14T00:13:32.275Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bda"
+  },
+  "username": "admin1",
+  "email": "admin@example.com",
+  "hashed_password": "admin123",
+  "rol": "admin",
+  "fecha_creacion": {
+    "$date": "2025-05-14T00:13:32.275Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bdb"
+  },
+  "username": "librera99",
+  "email": "libros@example.com",
+  "hashed_password": "libroslibros",
+  "rol": "vendedor",
+  "fecha_creacion": {
+    "$date": "2025-05-14T00:13:32.275Z"
+  }
+}]

@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd5"
+  },
+  "libro": {
+    "titulo": "Cien años de soledad"
+  },
+  "fecha_venta": {
+    "$date": "2025-05-10T00:00:00.000Z"
+  },
+  "cantidad": 2,
+  "total": 31.98,
+  "usuario": {
+    "username": "librera99"
+  }
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd6"
+  },
+  "libro": {
+    "titulo": "Rayuela"
+  },
+  "fecha_venta": {
+    "$date": "2025-05-12T00:00:00.000Z"
+  },
+  "cantidad": 1,
+  "total": 18,
+  "usuario": {
+    "username": "juanperez"
+  }
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd7"
+  },
+  "libro": {
+    "titulo": "El Aleph"
+  },
+  "fecha_venta": {
+    "$date": "2025-05-11T00:00:00.000Z"
+  },
+  "cantidad": 3,
+  "total": 37.5,
+  "usuario": {
+    "username": "librera99"
+  }
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd8"
+  },
+  "libro": {
+    "titulo": "Pedro Páramo"
+  },
+  "fecha_venta": {
+    "$date": "2025-05-13T00:00:00.000Z"
+  },
+  "cantidad": 1,
+  "total": 13.75,
+  "usuario": {
+    "username": "admin1"
+  }
+}]

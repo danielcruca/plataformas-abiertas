@@ -8,7 +8,7 @@ Aquí encontrarás la documentación relacionada con **Git** y **GitHub**.
 
 ➡️ [guia-inicial/README.md](./docs/guia-inicial/README.md)
 
----
+
 
 ## 🌿 Guía para uso de branches
 

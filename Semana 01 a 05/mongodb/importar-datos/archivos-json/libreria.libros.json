@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd0"
+  },
+  "titulo": "Cien años de soledad",
+  "autor": {
+    "nombre": "Gabriel",
+    "apellido": "García Márquez",
+    "nacionalidad": "Colombiana"
+  },
+  "precio": 15.99,
+  "cantidad_stock": 20
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd1"
+  },
+  "titulo": "El Aleph",
+  "autor": {
+    "nombre": "Jorge Luis",
+    "apellido": "Borges",
+    "nacionalidad": "Argentina"
+  },
+  "precio": 12.5,
+  "cantidad_stock": 15
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd2"
+  },
+  "titulo": "Rayuela",
+  "autor": {
+    "nombre": "Julio",
+    "apellido": "Cortázar",
+    "nacionalidad": "Argentina"
+  },
+  "precio": 18,
+  "cantidad_stock": 12
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd3"
+  },
+  "titulo": "Pedro Páramo",
+  "autor": {
+    "nombre": "Juan",
+    "apellido": "Rulfo",
+    "nacionalidad": "Mexicana"
+  },
+  "precio": 13.75,
+  "cantidad_stock": 10
+},
+{
+  "_id": {
+    "$oid": "6823e02cea9cb5e5156c4bd4"
+  },
+  "titulo": "La casa de los espíritus",
+  "autor": {
+    "nombre": "Isabel",
+    "apellido": "Allende",
+    "nacionalidad": "Chilena"
+  },
+  "precio": 17,
+  "cantidad_stock": 18
+},
+{
+  "_id": {
+    "$oid": "6824d6e3da1b9434df3d6461"
+  },
+  "titulo": "Los detectives salvajes #2",
+  "autor": {
+    "nombre": "Roberto",
+    "apellido": "Bolaño",
+    "nacionalidad": "Chile"
+  },
+  "precio": 22,
+  "cantidad_stock": 40
+},
+{
+  "_id": {
+    "$oid": "6824f5b2e4578c9d2e3d78a5"
+  },
+  "titulo": "Los detectives salvajes #2",
+  "autor": {
+    "nombre": "Roberto",
+    "apellido": "Bolaño",
+    "nacionalidad": "Chile"
+  },
+  "precio": 22,
+  "cantidad_stock": 40
+}]
