@@ -1,5 +1,3 @@
-# Guia MongoDB para conectarse con Compass y trabajar desde su computadora
-
 # 🌐 Guía para Crear una Cuenta en MongoDB Atlas y Conectarse con MongoDB Compass
 
 ## Conceptos
