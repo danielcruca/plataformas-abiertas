@@ -54,8 +54,8 @@
 
 ## 📌 Consejos Útiles
 
-- Verificá que las fechas, números y booleanos estén en el formato correcto.
-- Si hay errores, Compass mostrará un mensaje antes de importar.
+- Valida que las fechas, números y booleanos estén en el formato correcto.
+- En caso de errores, Compass mostrará un mensaje antes de importar.
 
 ## 🧪 Ejemplo de Archivo JSON Válido
 
