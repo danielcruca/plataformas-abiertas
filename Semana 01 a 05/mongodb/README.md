@@ -14,3 +14,8 @@ Nombre de la base de datos: `libreria`
 - 📊 [Colección de libros](./importar-datos/archivos-json/libreria.libros.json)
 - 📊 [Colección de usuarios](./importar-datos/archivos-json/libreria.usuarios.json)
 - 📊 [Colección de ventas](./importar-datos/archivos-json/libreria.ventas.json)
+
+
+# Presentacion
+
+![Presentación intro a Mongo DB y no-sql](./presentaciones/base%20de%20datos%20no%20sql.pdf)
