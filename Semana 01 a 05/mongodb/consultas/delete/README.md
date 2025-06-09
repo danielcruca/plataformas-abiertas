@@ -14,4 +14,7 @@ db.collection.deleteMany({ filtro });  // Borra todos los documentos que cumplen
 Ejemplo:
 ```js
     db.libros.deleteMany({ "autor.nombre": "Julio", "autor.apellido": "Cortázar" });
+    // o
+    db.libros.deleteOne({ _id: ObjectId("64b9f8e5a1c2b3d456789012") });
+
 ```
