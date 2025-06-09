@@ -2,8 +2,10 @@
 # 📘 Consultas en MongoDB - Parte 2
 
 
-# 🔧 ¿Cómo funciona?
+# 🔧 Agregaciónes funcionamiento
 Un pipeline de agregación es como una línea de producción en la que vas procesando los datos paso por paso.
+
+
 
 Cada paso se llama una etapa (stage), y podés  combinarlas. Las más comunes son:
 
@@ -16,10 +18,14 @@ Cada paso se llama una etapa (stage), y podés  combinarlas. Las más comunes so
 | `$limit`   | Muestra solo cierta cantidad                             | Los 5 productos más vendidos                   |
 | `$lookup`  | Une datos de otra colección (como un JOIN en SQL)        | Buscar el stock del producto en otra tabla     |
 
+![alt text](image.png)
+
+![alt text](image-1.png)
 
 ## 1. Agregaciones con `$aggregate`
 
-Las agregaciones permiten procesar datos y devolver resultados resumidos. Se usan etapas como `$match`, `$group`, `$sort`, `$project`, entre otras.
+Las agregaciones permiten procesar datos y devolver resultados resumidos.
+ Se usan etapas como: `$match`, `$group`, `$sort`, `$project`, entre otras.
 
 ---
 
@@ -44,10 +50,12 @@ db.ventas.aggregate([
     }
   },
   {
-    $sort: { cantidad_vendida: -1 } // Ordenar de mayor a menor
+    $sort: { cantidad_vendida: -1 } // Ordenar de mayor a menor -1 es descendente y 1 es ascendente
   }
 ]);
 ```
+Posible equivalente en SQL:
+
 ```sql
   SELECT 
     l.titulo AS titulo,
@@ -76,24 +84,36 @@ db.ventas.aggregate([
 ```js
 db.ventas.aggregate([
   {
+    $match: {
+      cantidad: { $gt: 0 }
+    }
+  },
+  {
     $group: {
       _id: "$libro.titulo",
       cantidad_vendida: { $sum: "$cantidad" }
     }
+  },
+  {
+    	$sort: { cantidad_vendida: -1 }
   }
 ]);
 
 ```
-Equivalente en SQL:
+Posible equivalente en SQL:
 
 ```sql
   SELECT 
-    libro.titulo AS titulo, 
+    libro_titulo AS titulo,
     SUM(cantidad) AS cantidad_vendida
   FROM 
     ventas
+  WHERE 
+    cantidad > 0
   GROUP BY 
-    libro.titulo;
+    libro_titulo
+  ORDER BY 
+    cantidad_vendida DESC;
 ```
 
 ---
@@ -101,40 +121,47 @@ Equivalente en SQL:
 ### c. 📦 Libros vendidas y su stock restante
 
 **Conceptos:**
-- `$lookup` para combinar con libros
+- `$lookup` para combinar con libros similar a un JOIN.
 - `$project` para mostrar campos personalizados
 
 ```js
 db.ventas.aggregate([
   {
     $group: {
-      _id: "$libro.titulo",                   // Agrupar por título
-      cantidadVendida: { $sum: "$cantidad" }  // Sumar cantidad vendida
+      _id: "$libro.titulo",
+      cantidadVendida: { $sum: "$cantidad" }
     }
   },
   {
     $lookup: {
-      from: "libros",                         // Buscar en colección 'libros'
-      localField: "_id",                      // Título agrupado
-      foreignField: "titulo",                 // Título en libros
-      as: "info_libro"  // Nombre de este lookup.
+      from: "libros",  // JOIN con libros
+      localField: "_id",  // id de ventas despues de la agrupación.
+      foreignField: "titulo", // Titulo se usa como simular clave foranea, recuerdo que clave foranea no existe en MongoDB pero se puede simular.
+      as: "info_libro" // Esto es un nombre  tipo variable.
     }
   },
-  {
-    $unwind: "$info_libro"                    // Descomponer el array
+    {
+    $unwind: "$info_libro" // El lookup es un array, hay que descomprimirlo para poder usarlo.
   },
   {
-    $project: {
-      _id: 0,
-      titulo: "$_id",
+    $project: { // aqui se muestran los campos que queremos mostrar.
+      _id: 1, // El 1 indica que se muestre el campo _id, si es 0 no se muestra
+      titulo: "$_id", // renombramos id como titulo
+      cantidadInicial: "$info_libro.cantidad_stock",
       cantidadVendida: 1,
-      stockTotal: "$info_libro.cantidad_stock"
+      cantidadRestante: {
+      $subtract: [
+          "$info_libro.cantidad_stock",
+          "$cantidadVendida"
+        ]
+      }
     }
   },
   {
-    $sort: { cantidadVendida: -1 }            // Ordenar por más vendidos
+    $sort: { cantidadVendida: -1 } // -1 es descendente y 1 es ascendente.
   }
 ]);
+
 ```
 
 ---

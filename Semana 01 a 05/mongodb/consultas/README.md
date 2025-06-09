@@ -3,6 +3,9 @@
 # Leer datos de una colección
 - [Leer documentos en una colección](./read/README.md)
 
+# Leer datos de una colección y agregaciones. Parte 2.
+- [Leer documentos en una colección](./read-agregaciones/README.md)
+
 # Actualizar datos de una colección
 - [Actualizar documentos en una colección](./update/README.md)
 
