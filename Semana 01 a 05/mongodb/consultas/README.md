@@ -6,7 +6,6 @@
 
 - [Leer documentos en una colección](./read/README.md)
 
----
 
 ## 📊 Leer datos de una colección y agregaciones (Parte 2)
 
@@ -18,13 +17,11 @@
 
 - [Actualizar documentos en una colección](./update/README.md)
 
----
 
 ## 🗑️ Eliminar datos de una colección
 
 - [Eliminar documentos en una colección](./delete/README.md)
 
----
 
 ## ➕ Insertar datos en una colección
 
