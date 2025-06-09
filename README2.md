@@ -23,7 +23,7 @@ Las agregaciones permiten procesar datos y devolver resultados resumidos. Se usa
 
 ---
 
-### a. 📅 Cantidad vendida de prendas por fecha específica
+### a. 📅 Cantidad vendida de libros por fecha específica
 
 **Conceptos:**
 - Filtrado con `$match`
@@ -34,7 +34,7 @@ Las agregaciones permiten procesar datos y devolver resultados resumidos. Se usa
 db.ventas.aggregate([
   {
     $match: {
-      fecha_venta: new Date("2025-05-31") //  Fecha específica
+      fecha_venta: new Date("2025-05-12") //  Fecha específica
     }
   },
   {
@@ -48,7 +48,21 @@ db.ventas.aggregate([
   }
 ]);
 ```
-
+```sql
+  SELECT 
+    l.titulo AS titulo,
+    SUM(v.cantidad) AS cantidad_vendida
+  FROM 
+    ventas v
+  JOIN 
+    libros l ON v.id_libro = l.id
+  WHERE 
+    v.fecha_venta = '2025-05-12'
+  GROUP BY 
+    l.titulo
+  ORDER BY 
+    cantidad_vendida DESC;
+```
 
 ---
 
@@ -63,14 +77,23 @@ db.ventas.aggregate([
 db.ventas.aggregate([
   {
     $group: {
-      _id: "$libro.titulo",         // Agrupar por título
-      total_ventas: { $sum: 1 }     // Contar ventas
+      _id: "$libro.titulo",
+      cantidad_vendida: { $sum: "$cantidad" }
     }
-  },
-  {
-    $sort: { total_ventas: -1 }     // Ordenar por más vendidos
   }
 ]);
+
+```
+Equivalente en SQL:
+
+```sql
+  SELECT 
+    libro.titulo AS titulo, 
+    SUM(cantidad) AS cantidad_vendida
+  FROM 
+    ventas
+  GROUP BY 
+    libro.titulo;
 ```
 
 ---
@@ -94,7 +117,7 @@ db.ventas.aggregate([
       from: "libros",                         // Buscar en colección 'libros'
       localField: "_id",                      // Título agrupado
       foreignField: "titulo",                 // Título en libros
-      as: "info_libro"
+      as: "info_libro"  // Nombre de este lookup.
     }
   },
   {
@@ -129,11 +152,11 @@ db.ventas.aggregate([
   {
     $group: {
       _id: "$libro.titulo",                  // Agrupar por título
-      cantidadVendida: { $sum: "$cantidad" }
+      cantidadVendida: { $sum: "$cantidad" } // Sumar cantidad vendida.
     }
   },
   {
-    $sort: { cantidadVendida: -1 }           // Ordenar descendente
+    $sort: { cantidadVendida: -1 }           // Ordenar descendente -1 y ascendente 1
   },
   {
     $limit: 5                                // Limitar a top 5
