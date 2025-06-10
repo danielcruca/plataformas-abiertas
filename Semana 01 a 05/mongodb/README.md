@@ -7,6 +7,10 @@ Aquí están las guías relacionadas a MongoDB:
 - 📘 [Guía MongoDB para conectarse con Compass y trabajar desde su computadora](./cuenta-mongo/README.md)
 - 📥 [Guía para importar datos manualmente en MongoDB Compass](./importar-datos/README.md)
 
+# Consultas
+
+- [Leer documentos en una colección](./consultas/README.md)
+
 # Ejemplos de bases de datos 
 
 Nombre de la base de datos: `libreria`
